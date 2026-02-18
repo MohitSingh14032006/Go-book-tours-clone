@@ -1,0 +1,785 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style: none;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    border-bottom: 2px solid #ccc;
+}
+header .headerMid{
+    max-width: 1170px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .headerMid figure{
+    width: 150px;
+    height: 25px;
+    border: 2px solid black;
+    box-shadow: 0px 0px 3px 3px #ccc;
+}
+header .headerMid figure img{
+    width: 100%;
+    height: 100%;
+}
+header .headerMid nav>ul{
+    display: flex;
+    gap: 30px;
+} 
+header .headerMid nav>ul>li{
+    padding: 30px 10px;
+    position: relative;
+}
+header .headerMid nav>ul>li:hover .megaMenu{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+header .headerMid nav>ul>li:hover .dropDown{
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+.megaMenu{
+    display: none;
+    width: 900px;
+    padding: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: -245px;
+    z-index: 999;
+}
+.megaMenu .mainHeading{
+    width: 100%;
+    padding-bottom: 10px;
+    font-size: 20px;
+    border-bottom: 2px solid #ccc;
+}
+.megaMenu .col ul li{
+    color: rgb(175, 1, 175);
+    line-height: 30px;
+}
+.megaMenu .col>ul>li:first-child{
+    font-size: 20px;
+}
+.megaMenu .col>ul>li:last-child{
+    margin-bottom: 30px;
+}
+.megaMenu .col:nth-child(4)>ul>li:last-child{
+    border-bottom: 2px solid #ccc;
+}
+.megaMenu .col:last-child>ul>li:last-child{
+    border-bottom: 2px solid #ccc;
+}
+.dropDown{
+    display: none;
+    width: 500px;
+    padding: 20px 10px;
+    border: 1px solid black;
+    border-radius: 10px; 
+    background-color: white;
+    position: absolute;
+    top: 100%;
+    right: 0px;
+    z-index: 999;
+}
+.dropDown ul{
+    flex-grow: 1;
+}
+.dropDown ul li{
+    color: rgb(175, 1, 175);
+    padding-top: 5px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+.bannerSection{
+    max-width: 1170px;
+    margin: 20px auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.bannerSection .banner1{
+    flex-basis: 65%;
+    height: 500px;
+    border-radius: 10px;
+    background: url('images/imgi_13_india-holidays.png') no-repeat center center;
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.bannerSection .banner1 h2{
+    margin-top: 200px;
+    color: antiquewhite;
+    margin-bottom: 25px;
+    font-size: 30px;
+    text-align: center;
+}
+.bannerSection .banner1 form{
+    display: flex;
+    justify-content: center;
+}
+.bannerSection .banner1 form input{
+    width: 500px;
+    height: 50px;
+    padding: 10px;
+    font-size: 18px;
+}
+.bannerSection .banner1 form input:focus{
+    outline: 0;
+    border: 1px solid purple;
+}
+.bannerSection .banner1 form button{
+    flex-basis: 10%;
+    font-size: 20px;
+    border: none;
+    background-color: purple;
+    color: white;
+}
+.bannerSection .banner1 form button:hover{
+    background-color: rgb(2, 30, 2);
+}
+.bannerSection .banner2{
+    flex-basis: calc(35% - 10px);
+    background: url('images/imgi_14_india-nepal-bhutan-tour.png') no-repeat center center;
+    background-size: cover;
+    border-radius: 10px;
+    position: relative;
+}
+.bannerSection .banner2 .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.516);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.bannerSection .banner2 .tourOfMonth{
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}
+.bannerSection .banner2 .tourOfMonth span{
+    width: fit-content;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 5px;
+}
+.bannerSection .banner2 .tourOfMonth h2{
+    color: white;
+    margin-bottom: 20px;
+}
+.bannerSection .banner2 .tourOfMonth p{
+    color: white;
+}
+.tourSupport{
+    max-width: 1170px;
+    margin: 15px auto;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+}
+.tourSupport .support1{
+    padding: 15px 20px 30px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.tourSupport .support1 .s1Image figure{
+    width: 50px;
+    height: 50px;
+}
+.tourSupport .support1 .s1Image figure img{
+    width: 100%;
+    height: 100%;
+}
+.tourSupport .support1 .s1Description h5{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.tourSupport .support2{
+    padding: 15px 20px 30px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.tourSupport .support2 .s2Image figure{
+    width: 50px;
+    height: 50px;
+}
+.tourSupport .support2 .s2Image figure img{
+    width: 100%;
+    height: 100%;
+}
+.tourSupport .support2 .s2Description h5{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.tourSupport .support3{
+    padding: 15px 10px 30px 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.tourSupport .support3 .s3Image figure{
+    width: 50px;
+    height: 50px;
+}
+.tourSupport .support3 .s3Image figure img{
+    width: 100%;
+    height: 100%;
+}
+.tourSupport .support3 .s3Description h5{
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.holidayDestination{
+    max-width: 1170px;
+    margin: 50px auto;
+}
+.holidayDestination h2{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.holidayDestination .imageSection{
+    display: flex;
+    gap: 20px;
+}
+.holidayDestination .imageSection .leftSection{
+    width: 50%;
+    position: relative;
+}
+.holidayDestination .imageSection .leftSection figure{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.holidayDestination .imageSection .leftSection figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;   
+}
+.holidayDestination .imageSection .leftSection .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.488);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.holidayDestination .imageSection .leftSection .rajasthanText{
+    position: absolute;
+    top: 80%;
+    left: 10%;
+}
+.holidayDestination .imageSection .leftSection .rajasthanText h3{
+    color: white;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.holidayDestination .imageSection .leftSection .rajasthanText p{
+   color: white;
+}
+.holidayDestination .imageSection .rightSection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.holidayDestination .imageSection .rightSection figure{
+    flex-basis: 30%;
+    height: 215px;
+    position: relative;
+}
+.holidayDestination .imageSection .rightSection figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.holidayDestination .imageSection .rightSection figure .overlayText{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.holidayDestination .imageSection .rightSection figure .overlay{
+    background-color: rgba(0, 0, 0, 0.36);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+}
+.holidayDestination .imageSection .rightSection figure .overlayText h3{
+    color: white;
+    margin-bottom: 10px;
+}
+.holidayDestination .imageSection .rightSection figure .overlayText p{
+    color: white;
+}
+.internationalDestination{
+    width: 1170px;
+    margin: 50px auto;
+}
+.internationalDestination h2{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.internationalDestination .imageSection {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 5px;
+    grid-template-columns: repeat(3,1fr);
+}
+.internationalDestination .imageSection .destination{
+    position: relative;
+}
+.internationalDestination .imageSection .destination figure{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.internationalDestination .imageSection .destination figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.internationalDestination .imageSection .destination .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.248);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.internationalDestination .imageSection .destination .overlayText{
+    position: absolute;
+    top: 80%;
+    left: 5%;
+    font-size: 25px;
+    font-weight: 600px;
+    color: white;
+}
+.travelThemes{
+    width: 1170px;
+    margin: 20px auto;
+}
+.travelThemes h2{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+.travelThemes .imageSection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 20px;
+    row-gap: 10px;
+}
+.travelThemes .imageSection .themes{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.travelThemes .imageSection .themes figure{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.travelThemes .imageSection .themes figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+.travelThemes .imageSection .themes .overlay{
+    background-color: rgba(0, 0, 0, 0.341);
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.travelThemes .imageSection .themes .overlayText{
+    position: absolute;
+    top: 70%;
+    left: 10%;
+}
+.travelThemes .imageSection .themes .overlayText h3{
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.travelThemes .imageSection .themes .overlayText p{
+    color: white;
+}
+.topPicks{
+    width: 100%;
+    background-color: #EFEEEE;
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.topPicks .midPart{
+    width: 1170px;
+    margin: 20px auto;
+}
+.topPicks .midPart h2{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+.topPicks .midPart .pickSection{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.topPicks .midPart .pickSection .pick{
+    flex-basis: 24.2%;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+.topPicks .midPart .pickSection .pick figure{
+    width: 100%;
+}
+.topPicks .midPart .pickSection .pick figure img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+    cursor: pointer;
+}
+.topPicks .midPart .pickSection .pick p{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.topPicks .midPart .pickSection .pick .bottomPart{
+    margin: 20px 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.topPicks .midPart .pickSection .pick .bottomPart span{
+    align-self: flex-end;
+    cursor: pointer;
+}
+.topPicks .midPart .pickSection .pick .bottomPart button{
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    letter-spacing: 2px;
+    color: white;
+    background-color: rgb(83, 5, 83);
+    cursor: pointer;
+}
+.topPicks .midPart .pickSection .pick .bottomPart button:hover{
+    background-color: #20371E;
+}
+.bestSeller{
+    max-width: 1170px;
+    margin: 10px auto;
+}
+.bestSeller h2{
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 30px;
+    margin: 30px 0px;
+}
+.bestSeller .sellerSection{
+    display: flex;
+    gap: 10px;
+}
+.bestSeller .sellerSection .seller{
+    flex-basis: 33%;
+    position: relative;
+}
+.bestSeller .sellerSection .seller figure{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.bestSeller .sellerSection .seller figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.bestSeller .sellerSection .seller .overlay{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.407);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.bestSeller .sellerSection .cost{
+    background-color: #198754;
+    padding: 5px;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+.bestSeller .sellerSection .seller .overlayText{
+    position: absolute;
+    top: 130px;
+    left: 20px;
+}
+.bestSeller .sellerSection .seller:last-child .overlayText{
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+.bestSeller .sellerSection .seller .overlayText h2{
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+.bestSeller .sellerSection .seller .overlayText p{
+    margin-bottom: 10px;
+    color: rgb(225, 220, 220);
+}
+.blogPosts{
+    max-width: 1170px;
+    margin: 50px auto;
+}
+.blogPosts h3{
+    font-size: 25px;
+    font-weight: lighter;
+    letter-spacing: 1px;
+    margin: 20px 0px;
+}
+.blogPosts p{
+    margin-bottom: 20px;
+}
+.blogPosts p span{
+    text-decoration: 2px solid underline;
+    font-weight: bold;
+}
+.blogPosts p span:hover{
+    cursor: pointer;
+}
+.blogPosts .posts{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+}
+.blogPosts .posts .postItems{
+    flex-grow: 1;
+    padding-bottom: 30px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+.blogPosts .posts .postItems figure{
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0px 0px;
+}
+.blogPosts .posts .postItems figure img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.blogPosts .posts .postItems figure img:hover{
+    cursor: pointer;
+}
+.blogPosts .posts .postItems h4{
+    margin: 25px 10px;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.blogPosts .posts .postItems h4:hover{
+    cursor: pointer;
+}
+.blogPosts .posts .postItems p{
+    margin-left: 10px;
+    margin-right: 15px;
+}
+footer{
+    width: 100%;
+    background-color: black;
+    padding: 20px 10px;
+}
+footer .footerUpper{
+    width: 98%;
+    background-color: #CCCDCE;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+footer .footerUpper img{
+    height: 30px;
+    width: 100px;
+}
+footer .footerSection {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+}
+footer .footerSection .col {
+    flex-grow: 1;
+}
+footer .footerSection .col ul {
+    color: white;
+}
+footer .footerSection .col ul h3{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+footer .footerSection .col ul li{
+    margin-bottom: 5px;
+}
+footer .footerLower{
+    width: 90%;
+    margin: 10px auto;
+}
+footer .footerLower hr{
+    width: 1320px;
+    margin: 10px auto;
+}
+footer .footerLower .lastSection{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+footer .footerLower .lastSection .payment{
+    display: flex;
+    align-items: center;
+    color: white;
+}
+footer .footerLower .lastSection .payment figure{
+    height: 40px;
+    width: 40px;
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .footerLower .lastSection .payment figure:hover{
+    background-color: white;
+    border-radius: 50%;
+}
+footer .footerLower .lastSection .copyright{
+    color: white;
+}
+footer .footerLower .lastSection .socialMedia{
+    color: white;
+}
+footer .footerLower .lastSection .socialMedia i:hover {
+    color: blue;
+}
+.icon{
+    width: 70px;
+    height: 70px;
+    background-color: #881364;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.icon i{
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    color: white;
+    font-size: 50px;
+}
+.FAQ{
+    max-width: 1170px;
+    margin: 100px auto;
+}
+.FAQ h3{
+    font-size: 30px;
+    font-weight: lighter;
+}
+.FAQ .question{
+    width: 100%;
+    margin: 20px 0px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+}
+.FAQ .question{
+    cursor: pointer;
+}
+.FAQ .question h4{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.subscribe{
+    width: 100%;
+    margin: 50px auto;
+}
+.subscribe form{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+.subscribe form input{
+    width: 500px;
+    padding: 15px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.subscribe form input:focus{
+    outline: 0;
+    border: 1px solid green;
+}
+.subscribe form input::placeholder{
+    font-size: 20px;
+}
+.subscribe form button{
+    padding: 15px;
+    background-color: #257f55;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    letter-spacing: 1px;
+}
+.subscribe form button:hover{
+    background-color: #157347;
+    cursor: pointer;
+}
